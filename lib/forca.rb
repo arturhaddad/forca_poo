@@ -46,12 +46,8 @@ class Forca
   def atualizar_forca
     system("clear")
     imprimir_desenho
-    if @letras_acertadas.size > 0
-      puts preencher_forca
-    end
-    if @letras_erradas.size > 0
-      puts "Letras erradas: #{@letras_erradas.sort.join(', ')}"
-    end
+    puts preencher_forca
+    puts "Letras erradas: #{@letras_erradas.sort.join(', ')}" if @letras_erradas.size > 0
     puts ""
   end
 

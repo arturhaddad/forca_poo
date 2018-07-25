@@ -2,9 +2,7 @@ require_relative "lib/forca"
 
 system("clear")
 f = Forca.new
-
-puts "Tente adivinhar a palavra para salvar nosso amiguinho :)"
-puts ""
+f.atualizar_forca
 
 until f.fim
   puts "Digite uma letra:"
